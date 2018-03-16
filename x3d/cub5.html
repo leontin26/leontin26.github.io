@@ -18,13 +18,18 @@
 	<p>UI version number: 2018.03.09.2</p>
 	<x3d width='600px' height='400px'> 
         <scene> 
-        <shape>
+        <shape DEF = "cub">
 			<appearance>
-			<movietexture repeatS = "false" repeatT = "false" loop = "true" url='film.ogv'/>
+			<material diffuseColor = "1 0 0" />
 			</appearance>
 			<box>
 			</box> 
 			</shape> 
+		
+		<transform translation = "3 0 0">
+		<shape USE = "cub">
+		</shape>
+		</transform>
         </scene> 
 		
     </x3d>
