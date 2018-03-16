@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html> 
+        <head> 
+            <title>My first X3DOM page</title> 			
+            <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+            <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+        </head> 
+        <body> 
+            <h1>Hello, X3DOM!</h1> 
+            <p> 
+                This is my first html page with some 3d objects. 
+            </p> 
+        </body>
+	
+	<body>
+	
+	<p>UI version number: 2018.03.09.2</p>
+	<x3d width='600px' height='400px'> 
+       
+		
+ 	    <scene> 
+		 
+		<viewpoint fieldofview = "1.57" position = "15 0 0" orientation = "0 1 0 1.57">
+		</viewpoint>
+		
+		<!--y-->
+		<shape>
+        <appearance>
+		<material diffusecolor = "1 0 0" />
+		</appearance>
+		<cylinder height = "20" />
+		</shape>
+		
+		
+		<transform translation = "0 11 0">
+		 
+		<shape>
+        <appearance>
+		<material diffusecolor = "1 0 0" />
+		</appearance>
+		<cone>
+		</cone>
+		</shape>
+		</transform>
+		
+		<transform translation = "0 13 0">
+		<shape>
+        <appearance>
+		<material diffusecolor = "1 0 0" />
+		</appearance>
+		<text string = "Y">
+		</text>
+		</shape>
+		</transform>
+		
+		
+		<!--x-->
+		<transform rotation = "0 0 1 1.57">
+		 
+		<shape>
+        <appearance>
+		<material diffusecolor = "0 1 0" />
+		</appearance>
+		<cylinder height = "20" />
+		</shape>
+		</transform>
+		
+		<transform rotation = "0 0 1 -1.57">
+		<transform translation = "0 11 0">
+		 
+		<shape>
+        <appearance>
+		<material diffusecolor = "0 1 0" />
+		</appearance>
+		<cone>
+		</cone>
+		</shape>
+		</transform>
+		</transform>
+		
+		<transform rotation = "0 0 1 -1.57">
+		<transform translation = "0 13 0">
+		<shape>
+        <appearance>
+		<material diffusecolor = "0 1 0" />
+		</appearance>
+		<text string = "X">
+		</text>
+		</shape>
+		</transform>
+		</transform>
+		
+		
+		<!--z-->
+		<transform rotation = "1 0 0 1.57">
+		 
+		<shape>
+        <appearance>
+		<material diffusecolor = "0 0 1" />
+		</appearance>
+		<cylinder height = "20" />
+		</shape>
+		</transform>
+		
+		<transform rotation = "1 0 0 1.57">
+		<transform translation = "0 11 0">
+		 
+		<shape>
+        <appearance>
+		<material diffusecolor = "0 0 1" />
+		</appearance>
+		<cone>
+		</cone>
+		</shape>
+		</transform>
+		</transform>
+		
+		<transform translation = "0 0 13">
+		<shape>
+        <appearance>
+		<material diffusecolor = "0 0 1" />
+		</appearance>
+		<text string = "Z">
+		</text>
+		</shape>
+		</transform>
+		
+		</scene>
+		
+		
+    </x3d>
+	</body>
+</html>  
