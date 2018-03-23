@@ -1,19 +1,21 @@
 
-document.getElementById("id_version").innerHTML = "Bussiness version number  2018.03.23.1"
+document.getElementById("id_version").innerHTML = "Bussiness version number  2018.03.23.2"
 
-setInterval(deseneaza, 30);
+var stare = {y:0, directie:1};
 
-var y = 0;
-var directie = 1;
+setInterval(deseneaza, 30, stare);
 
-function deseneaza()
+
+
+function deseneaza(x)
 {
 	var t = document.getElementById("id_transform");
-	t.setAttribute("translation", "0 " + y + " 0");
-	y += directie;
-	if (y > 10)
-		directie = -1;
+	var z = x.y -5
+	t.setAttribute("translation", "0 " + z + " 0");
+	x.y += x.directie/5;
+	if (x.y > 10)
+		x.directie = -1;
 	else
-		if (y < 0)
-			directie = 1;
+		if (x.y < 0)
+			x.directie = 1;
 }
