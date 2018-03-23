@@ -28,7 +28,7 @@
 		</Transform>
 		
 		<TimeSensor DEF = "timer" cycleInterval = "4" loop = "true"></TimeSensor>	
-		<PositionInterpolator DEF = "path" key = "0 0.5 1" keyValue = "0 0 0, 0 5 0, 0 0 0"></PositionInterpolator>
+		<PositionInterpolator DEF = "path" key = "0 0.5 1" keyValue = "0 -5 0, 5 5 0, 0 -5 0"></PositionInterpolator>
 		<Route fromNode = "timer" fromField = "fraction_changed" toNode = "path" ToField = "set_fraction"></Route>
 		<Route fromNode = "path" fromField = "value_changed" toNode = "ball" toField = "set_translation"></Route>
 		
