@@ -1,5 +1,5 @@
 
-document.getElementById("id_version").innerHTML = "Bussiness version number  2018.03.23.2"
+document.getElementById("id_version").innerHTML = "Bussiness version number  2018.03.23.3"
 
 var stare = {y:0, directie:1};
 
